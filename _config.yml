@@ -1,0 +1,15 @@
+# GitHub Pages 설정
+theme: null
+plugins: []
+
+# 사이트 정보
+title: NAVER
+description: 네이버 스타일 홈페이지
+url: https://choejaehyeog.github.io
+baseurl: /example.github.io
+
+# 빌드 설정
+markdown: kramdown
+exclude:
+  - README.md
+  - .git

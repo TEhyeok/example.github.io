@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #000;
+    letter-spacing: -0.4px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+
+/* Header */
+.header-top {
+    height: 32px;
+    background: #f5f6f7;
+    border-bottom: 1px solid #e4e8eb;
+}
+
+.header-top-inner {
+    width: 1130px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.link-naver {
+    font-size: 11px;
+    color: #404040;
+}
+
+.header-top-right a {
+    font-size: 11px;
+    color: #404040;
+    margin-left: 12px;
+}
+
+.header-search {
+    padding: 20px 0 16px;
+}
+
+.header-search-inner {
+    width: 1130px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+.logo a {
+    display: block;
+    width: 222px;
+    height: 52px;
+    background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIyIiBoZWlnaHQ9IjUyIiB2aWV3Qm94PSIwIDAgMjIyIDUyIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMjEgMjZDMjEgMzMuNzMyIDI4LjI2OCA0MSAzNyA0MUM0NS43MzIgNDEgNTMgMzMuNzMyIDUzIDI2QzUzIDE4LjI2OCA0NS43MzIgMTEgMzcgMTFDMjguMjY4IDExIDIxIDE4LjI2OCAyMSAyNloiIGZpbGw9IiMwM0M3NUEiLz4KPHBhdGggZD0iTTY5LjUgMTFINzcuNVY0MUg2OS41VjExWiIgZmlsbD0iIzAzQzc1QSIvPgo8cGF0aCBkPSJNOTQuNSAxMUgxMDIuNVY0MUg5NC41VjExWiIgZmlsbD0iIzAzQzc1QSIvPgo8cGF0aCBkPSJNMTE5LjUgMTFIMTI3LjVWNDFIMTE5LjVWMTFaIiBmaWxsPSIjMDNDNzVBIi8+CjxwYXRoIGQ9Ik0xNDQuNSAxMUgxNTIuNVY0MUgxNDQuNVYxMVoiIGZpbGw9IiMwM0M3NUEiLz4KPHBhdGggZD0iTTE2OS41IDExSDE3Ny41VjQxSDE2OS41VjExWiIgZmlsbD0iIzAzQzc1QSIvPgo8cGF0aCBkPSJNMTk0LjUgMTFIMjAyLjVWNDFIMTk0LjVWMTFaIiBmaWxsPSIjMDNDNzVBIi8+Cjwvc3ZnPg==') no-repeat;
+    background-size: 222px 52px;
+}
+
+.search-area {
+    flex: 1;
+    max-width: 586px;
+}
+
+.search-area form {
+    position: relative;
+    width: 100%;
+    height: 56px;
+    border: 2px solid #19ce60;
+    border-radius: 33px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.search-btn {
+    position: absolute;
+    right: 8px;
+    width: 56px;
+    height: 56px;
+    border: none;
+    border-radius: 50%;
+    background: #19ce60;
+    cursor: pointer;
+}
+
+/* GNB */
+.gnb {
+    border-top: 1px solid #e4e8eb;
+    border-bottom: 1px solid #e4e8eb;
+    background: #fff;
+}
+
+.gnb-inner {
+    width: 1130px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gnb-menu {
+    display: flex;
+}
+
+.gnb-menu li {
+    margin-right: 24px;
+}
+
+.gnb-menu li a {
+    display: block;
+    padding: 16px 0;
+    font-size: 15px;
+    font-weight: 700;
+    color: #03c75a;
+}
+
+.gnb-menu li a:hover {
+    text-decoration: underline;
+}
+
+.btn-more {
+    font-size: 13px;
+    color: #666;
+}
+
+/* Main Content */
+main {
+    background: #f2f4f7;
+    min-height: 1000px;
+}
+
+.container {
+    width: 1130px;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    gap: 30px;
+}
+
+.content-left {
+    flex: 1;
+}
+
+.content-right {
+    width: 350px;
+}
+
+/* Banner */
+.sc-banner {
+    margin-bottom: 12px;
+}
+
+.banner-wrap img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Newsstand */
+.sc-newsstand {
+    background: #fff;
+    border: 1px solid #dae1e6;
+    border-radius: 8px;
+    padding: 22px 20px 20px;
+    margin-bottom: 12px;
+}
+
+.newsstand-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.newsstand-header h2 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.newsstand-info a {
+    font-size: 13px;
+    color: #666;
+    margin-left: 12px;
+}
+
+/* Login */
+.sc-login {
+    background: #fff;
+    border: 1px solid #dae1e6;
+    border-radius: 8px;
+    padding: 21px 20px 18px;
+    margin-bottom: 12px;
+}
+
+.login-msg {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 13px;
+}
+
+.link-login {
+    display: block;
+    height: 48px;
+    background: #03c75a;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 48px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.login-sub {
+    display: flex;
+    justify-content: center;
+    margin-top: 14px;
+    padding-top: 13px;
+    border-top: 1px solid #f5f6f7;
+}
+
+.login-sub a {
+    font-size: 13px;
+    color: #666;
+    margin: 0 8px;
+}
+
+/* Timesquare */
+.sc-timesquare {
+    background: #fff;
+    border: 1px solid #dae1e6;
+    border-radius: 8px;
+    padding: 22px 20px 20px;
+    margin-bottom: 12px;
+}
+
+.timesquare-header h2 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.ranking-list li {
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
+.ranking-number {
+    display: inline-block;
+    width: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #00a832;
+}
+
+.ranking-list li a {
+    font-size: 14px;
+    color: #000;
+}
+
+.ranking-list li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #fff;
+    border-top: 1px solid #e4e8eb;
+    padding: 25px 0 92px;
+}
+
+.footer-inner {
+    width: 1130px;
+    margin: 0 auto;
+}
+
+.footer-notice {
+    margin-bottom: 15px;
+}
+
+.footer-notice a {
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 15px;
+}
+
+.footer-aside {
+    font-size: 12px;
+    color: #666;
+}
+
+.area-user {
+    margin-bottom: 9px;
+}
+
+.area-user a {
+    margin-right: 10px;
+}
+
+.area-col a {
+    margin-right: 10px;
+}
+
+.footer-copy {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #888;
+}
