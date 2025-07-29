@@ -1,0 +1,488 @@
+/* 리셋 및 기본 스타일 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 헤더 */
+.blog-header {
+    background: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.header-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.blog-title-area {
+    padding: 30px 0 20px;
+    text-align: center;
+}
+
+.blog-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.blog-title a {
+    color: #000;
+}
+
+.blog-desc {
+    font-size: 14px;
+    color: #666;
+}
+
+.blog-nav {
+    border-top: 1px solid #f0f0f0;
+}
+
+.blog-nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+.blog-nav li {
+    margin: 0 20px;
+}
+
+.blog-nav a {
+    display: block;
+    padding: 15px 0;
+    font-size: 15px;
+    color: #666;
+    position: relative;
+}
+
+.blog-nav a:hover,
+.blog-nav a.active {
+    color: #20c997;
+    font-weight: 700;
+}
+
+.blog-nav a.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: #20c997;
+}
+
+/* 메인 컨테이너 */
+.main-container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.content-area {
+    display: flex;
+    gap: 30px;
+}
+
+/* 메인 콘텐츠 */
+.blog-main {
+    flex: 1;
+}
+
+/* 포스트 아이템 */
+.post-item {
+    background: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.post-header {
+    margin-bottom: 20px;
+}
+
+.post-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.post-title a {
+    color: #000;
+    transition: color 0.2s;
+}
+
+.post-title a:hover {
+    color: #20c997;
+}
+
+.post-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 13px;
+    color: #999;
+}
+
+.post-category {
+    color: #20c997;
+    font-weight: 600;
+}
+
+.post-thumbnail {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.post-thumbnail img {
+    width: 100%;
+    display: block;
+}
+
+.post-content {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.post-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.read-more {
+    color: #20c997;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.post-tags {
+    display: flex;
+    gap: 8px;
+}
+
+.tag {
+    font-size: 12px;
+    color: #999;
+}
+
+/* 페이지네이션 */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 40px;
+}
+
+.page-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    color: #666;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.page-link:hover,
+.page-link.active {
+    background: #20c997;
+    color: #fff;
+    border-color: #20c997;
+}
+
+.page-link.next {
+    width: auto;
+    padding: 0 15px;
+}
+
+/* 사이드바 */
+.blog-sidebar {
+    width: 280px;
+}
+
+/* 위젯 공통 스타일 */
+.widget {
+    background: #fff;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.widget-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+/* 프로필 위젯 */
+.profile-widget {
+    text-align: center;
+}
+
+.profile-img {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-name {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.profile-desc {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.profile-stats {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-label {
+    display: block;
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 5px;
+}
+
+.stat-value {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    color: #20c997;
+}
+
+/* 카테고리 위젯 */
+.category-list li {
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.category-list li:last-child {
+    border-bottom: none;
+}
+
+.category-list a {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.category-list a:hover {
+    color: #20c997;
+}
+
+.category-list span {
+    color: #999;
+    font-size: 12px;
+}
+
+.sub-category {
+    margin-left: 20px;
+}
+
+.sub-category li {
+    border-bottom: none;
+}
+
+.sub-category a {
+    padding: 8px 0;
+    font-size: 13px;
+}
+
+/* 인기글 위젯 */
+.popular-list li {
+    margin-bottom: 12px;
+}
+
+.popular-list li:last-child {
+    margin-bottom: 0;
+}
+
+.popular-list a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.popular-rank {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background: #20c997;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.popular-title {
+    flex: 1;
+    font-size: 14px;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.popular-list a:hover .popular-title {
+    color: #20c997;
+}
+
+/* 태그 클라우드 */
+.tag-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag-item {
+    display: inline-block;
+    padding: 6px 12px;
+    background: #f5f5f5;
+    border-radius: 20px;
+    font-size: 13px;
+    color: #666;
+    transition: all 0.2s;
+}
+
+.tag-item:hover {
+    background: #20c997;
+    color: #fff;
+}
+
+/* 푸터 */
+.blog-footer {
+    background: #333;
+    color: #fff;
+    padding: 30px 0;
+    margin-top: 60px;
+}
+
+.footer-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.footer-inner p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #ccc;
+    font-size: 13px;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .content-area {
+        flex-direction: column;
+    }
+    
+    .blog-sidebar {
+        width: 100%;
+    }
+    
+    .blog-nav ul {
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .blog-nav li {
+        margin: 0 10px;
+    }
+    
+    .post-item {
+        padding: 20px;
+    }
+    
+    .post-title {
+        font-size: 18px;
+    }
+    
+    .header-inner,
+    .main-container,
+    .footer-inner {
+        padding: 0 15px;
+    }
+}

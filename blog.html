@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내 블로그 - 일상과 개발 이야기</title>
+    <link rel="stylesheet" href="blog-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 헤더 -->
+    <header class="blog-header">
+        <div class="header-inner">
+            <div class="blog-title-area">
+                <h1 class="blog-title">
+                    <a href="blog.html">개발자의 일상</a>
+                </h1>
+                <p class="blog-desc">코딩과 일상을 기록하는 공간</p>
+            </div>
+            <nav class="blog-nav">
+                <ul>
+                    <li><a href="#" class="active">전체글</a></li>
+                    <li><a href="#">개발</a></li>
+                    <li><a href="#">일상</a></li>
+                    <li><a href="#">리뷰</a></li>
+                    <li><a href="#">방명록</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 메인 컨테이너 -->
+    <div class="main-container">
+        <div class="content-area">
+            <!-- 메인 콘텐츠 -->
+            <main class="blog-main">
+                <!-- 포스트 1 -->
+                <article class="post-item">
+                    <div class="post-header">
+                        <h2 class="post-title">
+                            <a href="#">React 18의 새로운 기능들을 알아보자</a>
+                        </h2>
+                        <div class="post-meta">
+                            <span class="post-date">2025.01.29</span>
+                            <span class="post-category">개발</span>
+                            <span class="post-comments"><i class="far fa-comment"></i> 5</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>React 18이 출시되면서 많은 새로운 기능들이 추가되었습니다. 그 중에서도 가장 주목할 만한 기능은 Concurrent Features입니다. 이번 포스트에서는 React 18의 주요 변경사항과 새로운 기능들을 자세히 살펴보겠습니다...</p>
+                    </div>
+                    <div class="post-footer">
+                        <a href="#" class="read-more">더보기</a>
+                        <div class="post-tags">
+                            <span class="tag">#React</span>
+                            <span class="tag">#JavaScript</span>
+                            <span class="tag">#프론트엔드</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 포스트 2 -->
+                <article class="post-item">
+                    <div class="post-header">
+                        <h2 class="post-title">
+                            <a href="#">개발자의 카페 투어 - 강남 코딩하기 좋은 카페 5곳</a>
+                        </h2>
+                        <div class="post-meta">
+                            <span class="post-date">2025.01.28</span>
+                            <span class="post-category">일상</span>
+                            <span class="post-comments"><i class="far fa-comment"></i> 12</span>
+                        </div>
+                    </div>
+                    <div class="post-thumbnail">
+                        <img src="https://via.placeholder.com/700x400" alt="카페 이미지">
+                    </div>
+                    <div class="post-content">
+                        <p>개발자로 일하다 보면 가끔은 사무실이 아닌 다른 공간에서 작업하고 싶을 때가 있습니다. 오늘은 제가 자주 가는 강남의 코딩하기 좋은 카페들을 소개해드리려고 합니다. 와이파이도 빠르고 콘센트도 많아서...</p>
+                    </div>
+                    <div class="post-footer">
+                        <a href="#" class="read-more">더보기</a>
+                        <div class="post-tags">
+                            <span class="tag">#카페</span>
+                            <span class="tag">#강남</span>
+                            <span class="tag">#노마드</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 포스트 3 -->
+                <article class="post-item">
+                    <div class="post-header">
+                        <h2 class="post-title">
+                            <a href="#">TypeScript 5.0 베타 버전 출시! 주요 변경사항 정리</a>
+                        </h2>
+                        <div class="post-meta">
+                            <span class="post-date">2025.01.27</span>
+                            <span class="post-category">개발</span>
+                            <span class="post-comments"><i class="far fa-comment"></i> 8</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>TypeScript 5.0 베타 버전이 드디어 출시되었습니다! 이번 버전에서는 데코레이터의 표준화, 새로운 타입 체크 기능, 성능 개선 등 많은 변화가 있었는데요. 특히 ECMAScript 데코레이터 표준을 지원하게 되면서...</p>
+                    </div>
+                    <div class="post-footer">
+                        <a href="#" class="read-more">더보기</a>
+                        <div class="post-tags">
+                            <span class="tag">#TypeScript</span>
+                            <span class="tag">#JavaScript</span>
+                            <span class="tag">#웹개발</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 페이지네이션 -->
+                <div class="pagination">
+                    <a href="#" class="page-link active">1</a>
+                    <a href="#" class="page-link">2</a>
+                    <a href="#" class="page-link">3</a>
+                    <a href="#" class="page-link">4</a>
+                    <a href="#" class="page-link">5</a>
+                    <a href="#" class="page-link next">다음</a>
+                </div>
+            </main>
+
+            <!-- 사이드바 -->
+            <aside class="blog-sidebar">
+                <!-- 프로필 -->
+                <div class="widget profile-widget">
+                    <div class="profile-img">
+                        <img src="https://via.placeholder.com/80x80" alt="프로필 이미지">
+                    </div>
+                    <h3 class="profile-name">개발자 김코딩</h3>
+                    <p class="profile-desc">프론트엔드 개발자입니다. React와 TypeScript를 좋아합니다.</p>
+                    <div class="profile-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">게시글</span>
+                            <span class="stat-value">128</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">방문자</span>
+                            <span class="stat-value">5,234</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 카테고리 -->
+                <div class="widget category-widget">
+                    <h3 class="widget-title">카테고리</h3>
+                    <ul class="category-list">
+                        <li><a href="#">전체글 <span>(128)</span></a></li>
+                        <li><a href="#">개발 <span>(85)</span></a>
+                            <ul class="sub-category">
+                                <li><a href="#">React <span>(32)</span></a></li>
+                                <li><a href="#">TypeScript <span>(28)</span></a></li>
+                                <li><a href="#">JavaScript <span>(25)</span></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">일상 <span>(30)</span></a></li>
+                        <li><a href="#">리뷰 <span>(13)</span></a></li>
+                    </ul>
+                </div>
+
+                <!-- 인기글 -->
+                <div class="widget popular-widget">
+                    <h3 class="widget-title">인기글</h3>
+                    <ul class="popular-list">
+                        <li>
+                            <a href="#">
+                                <span class="popular-rank">1</span>
+                                <span class="popular-title">React 18의 새로운 기능들</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="popular-rank">2</span>
+                                <span class="popular-title">TypeScript 5.0 베타 출시</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="popular-rank">3</span>
+                                <span class="popular-title">개발자 카페 추천</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 태그 클라우드 -->
+                <div class="widget tag-widget">
+                    <h3 class="widget-title">태그</h3>
+                    <div class="tag-cloud">
+                        <a href="#" class="tag-item">React</a>
+                        <a href="#" class="tag-item">TypeScript</a>
+                        <a href="#" class="tag-item">JavaScript</a>
+                        <a href="#" class="tag-item">CSS</a>
+                        <a href="#" class="tag-item">Node.js</a>
+                        <a href="#" class="tag-item">개발일기</a>
+                        <a href="#" class="tag-item">카페</a>
+                        <a href="#" class="tag-item">리뷰</a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <!-- 푸터 -->
+    <footer class="blog-footer">
+        <div class="footer-inner">
+            <p>&copy; 2025 개발자의 일상. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">이용약관</a>
+                <a href="#">개인정보처리방침</a>
+                <a href="#">문의하기</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
